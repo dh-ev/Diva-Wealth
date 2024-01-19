@@ -1,0 +1,278 @@
+@font-face {
+  font-family: Minimal;
+  src: url("./Fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family:Brand;
+  src: url("./Fonts/SpritzAndDelicious_PERSONAL_USE_ONLY.otf");
+}
+
+@font-face {
+  font-family: Heading;
+  src: url("./Fonts/Roundo-Regular.ttf");
+}
+
+body {
+  margin: 0;
+  padding-top: 5%;
+  background-color: #FFA0D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Minimal;
+}
+
+a{
+  text-decoration: none;
+}
+
+.gradient-background {
+  background: linear-gradient(315deg,#f1caff,#93c7f1,#fcc4e4);
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
+  background-attachment: fixed;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  height: 450px;
+  width: 900px;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fde2bdd4;
+  border-radius: 10px;
+  font-weight: bold;
+  animation: gradient-hover 2s;
+}
+
+
+h1 {
+  align-self: right;
+  font-family: Heading;
+  font-size: 5rem;
+  color: #3e3d3d;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 20rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  background-color: #ffc7e7;
+  border: 1px solid #de3997;
+  box-shadow: 1px 1px 1px 1px #d7a1bf;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  font-family: Minimal;
+  font-size: 2rem;
+  font-weight: bolder;
+  outline: 2px black;
+  padding: 0.5rem;
+  background-color: #C6BEFA;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 10rem;
+  box-shadow: 5px bold #333;
+}
+
+button[type="submit"]:hover {
+  background-color: #8975f9;
+  box-shadow: 0px 0px 10px 5px #C6BEFA;
+  text-shadow: 0px 0px 3px white;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #494848;
+  text-align: center;
+}
+
+p a {
+  color: #8975f9;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.pwd{
+  display: flex;
+  justify-content: space-between;
+}
+
+.pwd-text{
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.forgotpwd{
+  opacity: 50%;
+  font-size: 0.75rem;
+}
+
+.horizontal{
+  flex-direction: row;
+}
+
+button{
+  align-self: center;
+}
+
+.glass{
+  background-color: #f9ce92d2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  font-family: Brand;
+  font-size: 3rem;
+  color: #ff4da0;
+  text-shadow: 0px 0px 6px rgb(240, 199, 111);
+}
+
+.sign{
+  height: 550px;
+}
+
+nav{
+  font-weight: bold;
+  background-color: #fffad0e3;
+  width: 100%;
+  height: 3.5rem;
+  display: inline;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 5px 0px #bda0e6c5;
+}
+
+nav:hover{
+  background-color:#fffad0;
+}
+
+.nav-bar a{
+  color: #333;
+}
+
+.nav-bar ul li{
+  list-style-type: none;
+  float: left;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+.nav-bar ul li a{
+  font-weight: lighter;
+}
+
+.nav-bar ul li a:hover{
+  font-weight: bold;
+  text-shadow:0px 0px 1px rgb(255, 255, 203);
+}
+
+#login-button{
+  float: right;
+  margin-right:1.5rem;
+  background-color: #C6BEFA;
+  font-family: Minimal;
+  font-size: large;
+  color: white;
+  border-radius: 1px;
+  border: none;
+  overflow: hidden;
+  align-self: center;
+}
+
+#login-button:hover {
+  background-color: #8975f9;
+  box-shadow: 0px 0px 10px 5px #C6BEFA;
+  text-shadow: 0px 0px 3px white;
+}
+
+#contact{
+  float: right;
+}
+
+#nav-title{
+  font-family: Brand;
+  font-size: 1.5rem;
+  color: #ff4da0;
+  text-shadow:0px 0px 6px rgb(240, 199, 111);
+}
+
+#nav-title:hover{
+  font-weight: bold;
+  text-shadow: 0px 0px 2px gold;
+}
+
+.content{
+  background-color: rgba(255, 255, 255, 0.455);
+  width: 100%;
+  display: flex;
+  align-self:baseline;
+  justify-content:space-between;
+  align-items: center;
+  margin: 4rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+footer{
+  background-color: #8975f9;
+  height: 10px;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-img{
+  height: 500px;
+}
+
+.text p{
+  font-size: large;
+}
